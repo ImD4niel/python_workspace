@@ -1,4 +1,5 @@
 class Currency: #class definition
+    '''class'''
     pass
 
 c1=Currency() #instantiation
