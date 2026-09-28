@@ -1,7 +1,8 @@
 '''
 Decorator:
     -it is a function that modifies the behaviur of another function without changing
-    its code.
+    its code..
+        
 
     OR
 
@@ -24,10 +25,10 @@ Decorator:
        with the inner/wrapper function.
 
        Example"
-       1.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           1.
             def decorator(fun):
                 def wrapper():
-                    print("select gift paper")
+                                print("select gift paper")
                     fun()
                     print("add label to the gift")
 

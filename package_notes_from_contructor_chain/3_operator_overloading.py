@@ -1,0 +1,33 @@
+'''
+Operator Overloading:
+    operator overloading is the ability to change the behavior of an operator
+    (like +,-,*,==,<, etc) so that it works woth oblject of users-defined
+    classes. this  is achieved by defining special methods often called "dunder"
+    (double underscore) ,methods, within those classes.
+
+    -Inbuilt CLasses=>python built in class like "int, float, str, and lsit
+     alrready have these dunder methods defined. when you use + with two
+     intergers, python knows to add them because the __add__ method is
+     alresdy there.
+
+    ->User-Defined Classes:=›Python has no idea what" + or == "should mean
+      for a custom class like Employee If you try to add two Employee objects
+      without defining the behavior, Python will raise a TypeError. You must
+      define the dunder methods to specify how the operators should behave.
+
+      -----------------------------------------
+    1)Arithmetic dunder methods
+    1)Arithmetic dunder methods:
+        -›used To define the behavior for mathematicaloperators like +,",*, 1,
+         etc.
+        -›When you use an operator, Python automatically calls the corresponding
+         dunder method on the object on the left side of the operator.
+        -›These methods must return a new object
+        ->In the base object class, these methods are not defined.
+          If you don't define them, your objects will not support these
+          operators.
+
+    operator  Dunder method         expression           method call
+    +          
+
+'''

@@ -81,4 +81,58 @@ object class:
         -and when called by default it returns the string representation of the
          instance (exactly samae as str).
 
-'''
+
+    5).__hash__(self):
+        -this methods gets invoked when we call hash(object) and bydefault
+         returns a unique integer(hash value)
+        -hash value of an object is used in set and dictionary for quick search
+         ing and maintaining unique values(remove duplicates).
+        -default behaviour is to return a unique integer for each ocject
+
+    NOTE:
+        __hash__() must always return int
+
+    SYNTAX:
+        def ClassName:
+            def __init__(self):
+                #initialization logic
+
+            def __hash__(self):
+            return uniqueinteger
+
+        obj=ClassName()
+        print(hash(obj)) #print(obj.__hash__())
+
+
+    6).__eq__(self,other);
+        -this method gets invoked/called when 2 instances are compared using
+         == operator and by default it compares Identity (addresses) of 2
+         instances, but NOT values.
+        -But in order to compare the values of custominstance rather than its
+         addresses, we need to OVERIDE __eq__()
+
+         NOTE:
+        -__eq__() is overidden for the INBUILT types(int,floats,list) etc
+        -this method shud always return a boolean (TRUE/FLASE).
+
+        SYNTAC:
+            def ClassName:
+                def __init__(self):
+                    #initialization logic
+
+                def __eq__(self,other):
+                return boolean value
+
+            obj1=ClassName()
+            obj2=CLassName()
+            print(obj1==obj2) #print(obj1.__eq__(obj2))
+
+    
+    isinstance(object,ClassName):
+        -its a predefined function that checks whether the given object belongs
+         to a particular class or not
+        -it returns boolean (TRUE/FALSE).
+            
+
+    '''
+
