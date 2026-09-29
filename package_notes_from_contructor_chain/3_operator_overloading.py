@@ -60,7 +60,22 @@ Operator Overloading:
 -------------------------------------------------------------------------
        
 
+    3).Duck Typing:
+      -Duck typing is a programming concept where the type or class of an
+       object is less than the methods it defines. the names comes from the
+       pharse:
+      -if it walks like a duck and quacks like a duck, then it must be a duck
 
+    In python, this means:
+        -you dont care about what an object is, you care about what it can do
+        -if an ibject has the required methods/attributes, it can be used in
+         that context.
+        -python focuses on behavior rather than explicit type checking
+
+        NOTE:
+        1).inheritence is not needed in Ducktyping
+        2).no need of any base class
+        3).no explicit type checking involved.
    
 
 '''
