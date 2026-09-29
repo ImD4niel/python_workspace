@@ -76,6 +76,11 @@ Operator Overloading:
         1).inheritence is not needed in Ducktyping
         2).no need of any base class
         3).no explicit type checking involved.
-   
 
+   hasattr(obj_ref,"attributename")
+   -its predefined function used to check of attributes(variable/method) is
+    present/belongs to that object.
+   -it returns boolean value
+   -it returns true if attributes is present in that object, else it returns
+    False
 '''
