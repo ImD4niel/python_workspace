@@ -26,8 +26,41 @@ Operator Overloading:
         ->In the base object class, these methods are not defined.
           If you don't define them, your objects will not support these
           operators.
+-------------------------------------------------------------------------
+ operator      Dunder method         expression           method call
+-------------------------------------------------------------------------
+    +       __add__(self,other)         a+b               a.__add__(b)
+    -       __sub__(self,other)         a-b               a.__sub__(b)
+    *       __mul__(self,other)         a*b               a.__mul__(b)
+    /       __truediv__(self,other)     a/b               a.__truediv__(b)
+   //       __floordiv__(self,other)    a//b              a.__floordiv__(b)
+    %       __mod__(self,other)         a%b               a.__mod__(b)
+   **       __pow__(self,other)         a**b              a.__pow__(b)
+-------------------------------------------------------------------------
 
-    operator  Dunder method         expression           method call
-    +          
+
+
+    2).Relational dunder methods:
+      -used to define the behavior for comparison operators like ==, !=, <, >,
+       <=, >=.
+      -similar to arithmetic methods, the operator triggers the corresponding
+       dunder method on the left-hand object.
+      -just like the arithmetic ones, they are not defined in the base object
+       class
+
+-------------------------------------------------------------------------
+ operator      Dunder method         expression           method call
+-------------------------------------------------------------------------
+   ==       __eq__(self,other)         a==b             a.__eq__(b)
+   !=       __ne__(self,other)         a!=b             a.__ne__(b)
+    <       __lt__(self,other)         a<b              a.__lt__(b)
+    >       __gt__(self,other)         a>b              a.__gt__(b)
+   <=       __le__(self,other)         a<=b             a.__le__(b)
+   >=       __ge__(self,other)         a>=b             a.__ge__(b)
+-------------------------------------------------------------------------
+       
+
+
+   
 
 '''
