@@ -16,7 +16,8 @@ class Rapido:
         print("rapido commutes")
 
 def process_delivery(partner):
-    partner.deliver()
+    if hasattr(partner,"deliver"):  #safe duck typing, check if the partner has deliver method or not. 
+        partner.deliver()
 
 
 z=Zomato()
@@ -27,3 +28,6 @@ l=[z,s,sh,r]
 
 for p in l:
     process_delivery(p)
+print(hasattr(z,"deliver")) # True
+print(hasattr(z,"commute")) #is commute method present in zomato class? False
+print(hasattr(r,"commute")) #is commute method present in rapido class? True
